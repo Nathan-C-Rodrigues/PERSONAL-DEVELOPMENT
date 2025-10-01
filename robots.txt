@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shadowtechnologies.eu/sitemap.xml
