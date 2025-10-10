@@ -3,250 +3,181 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shadow Technologies Ltd — Refurbished Samsung • Repairs • Audio (Soon)</title>
-  <meta name="description" content="Shadow Technologies Ltd — Ireland. Premium Samsung refurb devices, genuine-parts repairs, and Shadow Audio (coming soon)." />
+  <title>Shadow Technologies Ltd — Refurbished Samsung Devices & OEM Repairs</title>
+  <meta name="description" content="Shadow Technologies Ltd — Ireland-based e-commerce for premium refurbished Samsung devices and OEM-only repair services.">
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" href="assets/img/logo-256.png" type="image/png" />
-  <script type="module">
-    import {
-      REVOLUT_LINK_FOLD5_256,
-      REVOLUT_LINK_FOLD5_512,
-      REVOLUT_LINK_S22U_256,
-      FORMSPREE_ENDPOINT
-    } from './assets/js/config.js';
-    window.SHADOW_CONFIG = { REVOLUT_LINK_FOLD5_256, REVOLUT_LINK_FOLD5_512, REVOLUT_LINK_S22U_256, FORMSPREE_ENDPOINT };
-  </script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      max-width: 140px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      margin: 10px 0;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      color: #444;
+    }
+    main {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .product:hover {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transform: translateY(-3px);
+    }
+    .product img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin: 15px 0 8px;
+      font-size: 1.1rem;
+    }
+    .price {
+      color: #0070f3;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .grade {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 5px;
+    }
+    button {
+      background-color: #111;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background-color: #333;
+    }
+
+    footer {
+      background: #0d0d0d;
+      color: #ccc;
+      padding: 30px 0;
+      text-align: center;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Header -->
   <header>
-    <div class="wrap top">
-      <div class="brand">
-        <img src="assets/img/logo-256.png" alt="Shadow Technologies" class="brandmark" width="28" height="28" />
-        <span class="logo">SHADOW TECHNOLOGIES LTD</span>
-      </div>
-
-      <!-- Mobile toggle -->
-      <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" aria-label="Open menu">☰</button>
-
-      <nav id="mainnav" aria-label="Main">
-        <a href="#devices">Refurb Devices</a>
-        <a href="#repairs">Repairs</a>
-        <a href="#audio">Shadow Audio</a>
-        <a href="#contact">Contact</a>
-        <a href="warranty.html">Warranty</a>
-        <a href="privacy.html">Privacy</a>
-        <a class="pill-link" href="terms.html">Terms</a>
-      </nav>
-    </div>
+    <img src="assets/img/logo.png" alt="Shadow Technologies Logo" />
+    <h1>Shadow Technologies Ltd</h1>
+    <p class="tagline">Refurbished Samsung Devices • OEM Repairs • No Third-Party Parts</p>
   </header>
 
-  <main class="wrap">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="kicker">IRELAND • SAMSUNG SPECIALISTS</div>
-      <h1>Premium Samsung refurbs &amp; genuine-parts repairs.</h1>
-      <p>We refurbish Samsung devices the right way and repair them with OEM parts wherever possible. Shadow Audio launches later — for now, phones pay the bills.</p>
-      <div class="stack" style="margin-top:14px">
-        <a class="btn" href="#devices">Shop refurbs</a>
-        <a class="btn btn-ghost" href="#repairs">Book a repair</a>
+  <main>
+    <section class="section">
+      <h2>Featured Devices</h2>
+      <div class="products">
+        <div class="product">
+          <img src="assets/img/fold5-256.jpg" alt="Samsung Galaxy Z Fold 5 256GB" />
+          <h3>Galaxy Z Fold 5 — 256GB</h3>
+          <p class="grade">Grade A • Excellent condition</p>
+          <p class="price">€950</p>
+          <button>Buy</button>
+        </div>
+
+        <div class="product">
+          <img src="assets/img/fold5-512.jpg" alt="Samsung Galaxy Z Fold 5 512GB" />
+          <h3>Galaxy Z Fold 5 — 512GB</h3>
+          <p class="grade">Grade A- • Near mint</p>
+          <p class="price">€1,100</p>
+          <button>Buy</button>
+        </div>
+
+        <div class="product">
+          <img src="assets/img/s22ultra.jpg" alt="Samsung Galaxy S22 Ultra 256GB" />
+          <h3>Galaxy S22 Ultra — 256GB</h3>
+          <p class="grade">Grade B+ • Minor frame marks</p>
+          <p class="price">€550</p>
+          <button>Buy</button>
+        </div>
       </div>
-      <p class="note" style="margin-top:10px">
-        No account required. Order confirmation is emailed. We store invoices securely; request a copy anytime at
-        <a href="mailto:contact@shadowtechnologies.eu">contact@shadowtechnologies.eu</a>.
+    </section>
+
+    <section class="section">
+      <h2>Repair Services</h2>
+      <p>
+        We provide exclusive OEM-only repair services for Samsung devices.
+        Each repair is carried out with precision tools and genuine components — no third-party interference allowed.
       </p>
-    </section>
-
-    <!-- Devices -->
-    <section id="devices" class="section">
-      <h2>Refurbished Samsung devices</h2>
-      <p class="muted">All devices data-wiped, battery health checked, and re-sealed. Graded honestly.</p>
-
-      <div class="grid" role="list">
-        <!-- Fold5 256 -->
-        <article class="card" role="listitem">
-          <div class="card-head">
-            <span class="tag">Galaxy Z Fold5 • 256GB</span>
-            <span class="badge">Grade A-</span>
-          </div>
-          <img class="img" src="assets/img/fold5-256.jpg" alt="Samsung Galaxy Z Fold5 256GB" />
-          <h3>Samsung Galaxy Z Fold5 (256GB)</h3>
-          <p class="muted">Excellent condition. Minor hairlines only. 6-month hardware warranty.</p>
-          <p><span class="price">€950</span></p>
-          <div class="stack">
-            <a class="btn" id="buy-fold5-256">Buy</a>
-            <a class="link" href="assets/img/fold5-256.jpg" target="_blank" rel="noopener">View photos</a>
-          </div>
-        </article>
-
-        <!-- Fold5 512 -->
-        <article class="card" role="listitem">
-          <div class="card-head">
-            <span class="tag">Galaxy Z Fold5 • 512GB</span>
-            <span class="badge">Grade A</span>
-          </div>
-          <img class="img" src="assets/img/fold5-512.jpg" alt="Samsung Galaxy Z Fold5 512GB" />
-          <h3>Samsung Galaxy Z Fold5 (512GB)</h3>
-          <p class="muted">Near-mint. Genuine parts verified. 6-month hardware warranty.</p>
-          <p><span class="price">€1,100</span></p>
-          <div class="stack">
-            <a class="btn" id="buy-fold5-512">Buy</a>
-            <a class="link" href="assets/img/fold5-512.jpg" target="_blank" rel="noopener">View photos</a>
-          </div>
-        </article>
-
-        <!-- S22 Ultra -->
-        <article class="card" role="listitem">
-          <div class="card-head">
-            <span class="tag">Galaxy S22 Ultra • 256GB</span>
-            <span class="badge">Grade B (light frame scuffs)</span>
-          </div>
-          <img class="img" src="assets/img/s22ultra.jpg" alt="Samsung Galaxy S22 Ultra 256GB" />
-          <h3>Samsung Galaxy S22 Ultra (256GB)</h3>
-          <p class="muted">Fully functional, light cosmetic wear on metal frame. New screen protector fitted. 6-month hardware warranty.</p>
-          <p><span class="price">€550</span></p>
-          <div class="stack">
-            <a class="btn" id="buy-s22u">Buy</a>
-            <a class="link" href="assets/img/s22ultra.jpg" target="_blank" rel="noopener">View photos</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Repairs -->
-    <section id="repairs" class="section">
-      <h2>Repairs (Samsung-only)</h2>
-      <p class="muted">Screen, battery, back-glass, cameras, charge-port. OEM parts wherever possible; otherwise top-tier aftermarket disclosed up front.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Request a repair quote</h3>
-          <form id="repairForm" method="POST">
-            <label>Device model
-              <input name="model" placeholder="e.g., Galaxy Z Fold5" required />
-            </label>
-            <label>Issue
-              <select name="issue" required>
-                <option value="Screen">Screen</option>
-                <option value="Battery">Battery</option>
-                <option value="Back glass">Back glass</option>
-                <option value="Cameras">Cameras</option>
-                <option value="Charge port">Charge port</option>
-                <option value="Other">Other</option>
-              </select>
-            </label>
-            <label>Describe the problem
-              <textarea name="details" rows="4" placeholder="Tell us what happened…"></textarea>
-            </label>
-            <label>Your email
-              <input name="email" type="email" required />
-            </label>
-            <button class="btn" type="submit">Get quote</button>
-            <p class="note" id="repairNote"></p>
-          </form>
-        </div>
-        <div class="card">
-          <h3>Why choose Shadow</h3>
-          <ul>
-            <li>Genuine OEM parts where available</li>
-            <li>Transparent grading &amp; warranties</li>
-            <li>Secure data handling and full wipe on intake</li>
-            <li>Small shop, obsessive quality control</li>
-          </ul>
-        </div>
-      </div>
-      <p class="note">Warranty: 90-day parts &amp; labour for repairs (excludes accidental/liquid damage). Warranty void if Samsung Knox is tripped or third-party tampering occurs.</p>
-    </section>
-
-    <!-- Audio -->
-    <section id="audio" class="section">
-      <h2>Shadow Audio <span class="pill">Coming soon</span></h2>
-      <p class="muted">We’re prototyping high-end headphones &amp; earbuds. Sign up to be first in line.</p>
-      <form id="notifyForm" method="POST">
-        <label>Email <input type="email" name="email" required /></label>
-        <button class="btn" type="submit">Notify me</button>
-        <p class="note" id="notifyNote"></p>
-      </form>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p class="muted">Email: <a href="mailto:contact@shadowtechnologies.eu">contact@shadowtechnologies.eu</a> • WhatsApp: +353 834 663 076</p>
+      <ul>
+        <li>OEM Display Replacements</li>
+        <li>Battery & Charging IC Replacement</li>
+        <li>Logic Board Repairs</li>
+        <li>Knox Integrity Retained</li>
+      </ul>
+      <button>Book a Repair</button>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="wrap">
-      <div class="stack" style="justify-content:space-between">
-        <div>© <span id="y"></span> Shadow Technologies Ltd. All rights reserved.</div>
-        <div class="stack">
-          <span class="pill">Reg. No. 798203 (IE)</span>
-          <span class="pill">D-U-N-S: 768861402</span>
-        </div>
-      </div>
-      <div class="note">See our <a href="warranty.html">Warranty &amp; Returns</a>, <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</div>
-    </div>
+  <footer>
+    <p style="margin:0;font-size:0.95rem;">
+      © <span id="y"></span> <strong>Shadow Technologies Ltd</strong> — Ireland • Reg. No. 798203 • VAT 4474473GH
+    </p>
+    <p style="margin:6px 0 0;font-size:0.9rem;">
+      <a href="terms.html">Terms & Conditions</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="warranty.html">Warranty</a>
+    </p>
+    <p style="margin:12px 0 0;font-size:0.85rem;color:#777;">
+      This website does not use cookies or tracking of any kind.
+    </p>
+    <p style="margin-top:12px;font-size:0.85rem;">
+      Contact: <a href="mailto:contact@shadowtechnologies.eu">contact@shadowtechnologies.eu</a>
+    </p>
   </footer>
 
-  <!-- Behavior -->
   <script>
-    const cfg = window.SHADOW_CONFIG || {};
-
-    // BUY buttons → Hosted Checkout links
-    const byId = (id) => document.getElementById(id);
-    const map = [
-      ['buy-fold5-256', 'REVOLUT_LINK_FOLD5_256'],
-      ['buy-fold5-512', 'REVOLUT_LINK_FOLD5_512'],
-      ['buy-s22u',      'REVOLUT_LINK_S22U_256']
-    ];
-    map.forEach(([btnId, key]) => {
-      const el = byId(btnId);
-      if (el) el.onclick = () => window.location.href = cfg[key];
-    });
-
-    // Forms → Formspree
-    const postJSON = (endpoint, data) =>
-      fetch(endpoint, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) });
-
-    const repairForm = document.getElementById('repairForm');
-    const repairNote = document.getElementById('repairNote');
-    if (repairForm) {
-      repairForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const fd = new FormData(repairForm);
-        const body = Object.fromEntries(fd.entries());
-        const r = await postJSON(cfg.FORMSPREE_ENDPOINT, { type:'repair', ...body });
-        repairNote.textContent = r.ok ? 'Thanks! We\'ll reply shortly.' : 'Couldn\'t send. Try email.';
-        if (r.ok) repairForm.reset();
-      });
-    }
-
-    const notifyForm = document.getElementById('notifyForm');
-    const notifyNote = document.getElementById('notifyNote');
-    if (notifyForm) {
-      notifyForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const fd = new FormData(notifyForm);
-        const body = Object.fromEntries(fd.entries());
-        const r = await postJSON(cfg.FORMSPREE_ENDPOINT, { type:'audio_notify', list:'ShadowAudio', ...body });
-        notifyNote.textContent = r.ok ? 'You\'re on the list! We\'ll email when ready.' : 'Couldn\'t subscribe. Try email.';
-        if (r.ok) notifyForm.reset();
-      });
-    }
-
-    // Mobile nav toggle
-    const t = document.querySelector('.nav-toggle');
-    const n = document.getElementById('mainnav');
-    if (t && n) {
-      t.addEventListener('click', () => {
-        const open = t.getAttribute('aria-expanded') === 'true';
-        t.setAttribute('aria-expanded', String(!open));
-        n.classList.toggle('open', !open);
-      });
-    }
-
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
